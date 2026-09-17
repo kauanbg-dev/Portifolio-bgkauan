@@ -44,6 +44,11 @@ main {
   margin-top: 88px;
 }
 
+main section[id],
+#conteudo {
+  scroll-margin-top: 90px;
+}
+
 .section-title {
   margin-bottom: 28px;
 }
