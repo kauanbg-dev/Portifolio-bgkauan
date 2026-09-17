@@ -37,3 +37,11 @@ Site institucional do estúdio.
 [Site](https://pratique-pilates.vercel.app/) · [Código](https://github.com/kauanbg-dev/pratique-pilates)
 
 ![Pratique + Pilates](./img/preview-pilates.png)
+
+### Pratique + Pilates — Sistema
+
+Site público + painel administrativo com login, alunos, agenda e financeiro. Back-end serverless com banco de dados.
+
+[Site](https://adm-pratique-pilates.vercel.app/) · [Código](https://github.com/kauanbg-dev/adm-pilates)
+
+![Pratique + Pilates — Sistema](./img/preview-adm-pilates.png)
