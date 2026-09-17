@@ -6,16 +6,19 @@
   z-index: 0;
   background: radial-gradient(
     520px circle at var(--mx, 50%) var(--my, 20%),
-    rgba(0, 224, 255, 0.09),
+    var(--spotlight),
     transparent 42%
   );
 }
 
 .has-motion main,
-.has-motion header,
 .has-motion footer {
   position: relative;
   z-index: 1;
+}
+
+.has-motion header {
+  z-index: 1000;
 }
 
 header.is-scrolled {
@@ -25,7 +28,7 @@ header.is-scrolled {
 }
 
 .nav-links a.is-active {
-  color: #00e0ff;
+  color: var(--accent-text);
 }
 
 .nav-links a.is-active::after {

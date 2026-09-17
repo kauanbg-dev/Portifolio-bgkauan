@@ -59,6 +59,9 @@ const translations = {
       pilates:
         "Site institucional para um estúdio: serviços claros, navegação simples e CTAs visíveis para o público entrar em contato.",
       pilatesAlt: "Site do estúdio Pratique + Pilates",
+      admPilates:
+        "Evolução do projeto: site público mais um painel administrativo com login, cadastro de alunos, agenda e financeiro. Back-end serverless com banco de dados.",
+      admPilatesAlt: "Tela de login do painel administrativo do Pratique + Pilates",
     },
     resume: {
       kicker: "Currículo",
@@ -73,6 +76,9 @@ const translations = {
       kicker: "Contato",
       title: "Vamos conversar",
       email: "E-mail",
+    },
+    theme: {
+      toggle: "Alternar tema claro e escuro",
     },
     footer: "© {year} Kauan Borges. Todos os direitos reservados.",
   },
@@ -136,6 +142,9 @@ const translations = {
       pilates:
         "Institutional site for a Pilates studio: clear services, simple navigation, and visible CTAs so visitors can get in touch.",
       pilatesAlt: "Pratique + Pilates studio website",
+      admPilates:
+        "A step up: a public site plus an admin panel with login, student management, schedule, and finances. Serverless backend with a database.",
+      admPilatesAlt: "Login screen of the Pratique + Pilates admin panel",
     },
     resume: {
       kicker: "Resume",
@@ -150,6 +159,9 @@ const translations = {
       kicker: "Contact",
       title: "Let’s talk",
       email: "Email",
+    },
+    theme: {
+      toggle: "Toggle light and dark theme",
     },
     footer: "© {year} Kauan Borges. All rights reserved.",
   },
@@ -204,6 +216,14 @@ function applyLang(lang) {
   document.querySelectorAll("[data-i18n-href]").forEach((el) => {
     const value = getByPath(dictionary, el.dataset.i18nHref);
     if (typeof value === "string") el.setAttribute("href", value);
+  });
+
+  document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+    const value = getByPath(dictionary, el.dataset.i18nAria);
+    if (typeof value === "string") {
+      el.setAttribute("aria-label", value);
+      el.setAttribute("title", value);
+    }
   });
 
   document.querySelectorAll("[data-resume-link]").forEach((el) => {
