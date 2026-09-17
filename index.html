@@ -47,21 +47,16 @@
       <span>Kauan Borges</span>
     </a>
 
-    <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">
-      <span class="sr-only" data-i18n="menu">Abrir menu</span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav id="site-nav" data-nav>
+    <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
       <div class="nav-links">
         <a href="#sobre" data-i18n="nav.about">Sobre</a>
         <a href="#skills" data-i18n="nav.skills">Skills</a>
         <a href="#projetos" data-i18n="nav.projects">Projetos</a>
         <a href="#contato" data-i18n="nav.contact">Contato</a>
       </div>
+    </nav>
 
+    <div class="header-actions">
       <div class="lang-switch" role="group" aria-label="Idioma">
         <button type="button" class="lang active" data-lang="pt" aria-pressed="true">PT</button>
         <button type="button" class="lang" data-lang="en" aria-pressed="false">EN</button>
@@ -76,7 +71,7 @@
           <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
         </svg>
       </button>
-    </nav>
+    </div>
   </header>
 
   <main id="conteudo">
@@ -357,7 +352,6 @@
 
   <script src="./js/theme.js"></script>
   <script src="./js/i18n.js"></script>
-  <script src="./js/main.js"></script>
   <script src="./js/interactions.js"></script>
 </body>
 </html>
