@@ -115,3 +115,9 @@
 :root[data-theme="light"] .theme-toggle .icon-moon {
   display: none;
 }
+
+/* The GitHub mark is a solid white glyph (for the dark theme), so it
+   disappears on the light background. Darken it only in light mode. */
+:root[data-theme="light"] img[src*="logo-github"] {
+  filter: invert(1);
+}
